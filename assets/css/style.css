@@ -189,6 +189,13 @@ h5 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.header-content .header-right .wallet-btn:hover {
+  background-color: var(--white-color);
+  border-color: var(--white-color);
 }
 
 .banner-content {
