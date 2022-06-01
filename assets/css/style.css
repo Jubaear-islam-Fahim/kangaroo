@@ -194,8 +194,13 @@ h5 {
 }
 
 .header-content .header-right .wallet-btn:hover {
-  background-color: var(--white-color);
-  border-color: var(--white-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.header-content .header-right .wallet-btn:hover img {
+  -webkit-filter: invert(100%) sepia(0%) saturate(7425%) hue-rotate(42deg) brightness(224%) contrast(118%);
+          filter: invert(100%) sepia(0%) saturate(7425%) hue-rotate(42deg) brightness(224%) contrast(118%);
 }
 
 .banner-content {
