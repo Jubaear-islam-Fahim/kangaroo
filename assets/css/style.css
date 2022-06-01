@@ -1,0 +1,882 @@
+@import url("../css/reset.css");
+:root {
+  --black-color: #111111;
+  --primary-color: #F43883;
+  --white-color: #fff;
+}
+
+body {
+  font-family: 'Satoshi-Medium';
+  background-color: var(--black-color);
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM-Medium';
+  src: url("../fonts/IBMPlexMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-family: 'Satoshi-Bold';
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--white-color);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+h5 {
+  font-family: 'Satoshi-Regular';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.col_3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.header-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 380px 200px;
+      grid-template-columns: 1fr 380px 200px;
+  padding: 40px 0 20px;
+  border-bottom: 1.4px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-content .header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-content .header-left .docs {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-family: 'IBM-Medium';
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white-color);
+  padding-right: 30px;
+}
+
+.header-content .header-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 1.4px solid rgba(255, 255, 255, 0.1);
+  border-right: 1.4px solid rgba(255, 255, 255, 0.1);
+  padding: 0 30px;
+}
+
+.header-content .header-center .mark-header img {
+  border-radius: 100px;
+}
+
+.header-content .header-center .mark-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-family: 'IBM-Medium';
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white-color);
+}
+
+.header-content .header-center .buy-btn {
+  margin-left: auto;
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+  width: 159px;
+  height: 40px;
+  font-size: 15px;
+  font-family: 'Satoshi-Bold';
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--white-color);
+}
+
+.header-content .header-right {
+  margin-left: auto;
+}
+
+.header-content .header-right .wallet-btn {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  font-family: 'Satoshi-Bold';
+  font-weight: 700;
+  font-size: 15px;
+  height: 40px;
+  width: 174px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.banner-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.banner-content h5 {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px 0 20px;
+}
+
+.banner-content h5 a {
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+
+.banner-content .time {
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.banner-content .time span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.banner-content .time .tt {
+  color: white;
+}
+
+.many-content .many-item {
+  background: #1C1C1C;
+  border-radius: 8px;
+  color: var(--white-color);
+  padding: 25px 30px 35px;
+  text-align: center;
+}
+
+.many-content .many-item h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.many-content .many-item h2 {
+  font-size: 45px;
+  color: var(--primary-color);
+  font-family: 'IBM-Medium';
+}
+
+.stake-con {
+  background: #1C1C1C;
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 40px;
+}
+
+.stake-unstake-content {
+  padding-bottom: 30px;
+}
+
+.stake-unstake-content .stake-unstake-item {
+  text-align: center;
+}
+
+.stake-unstake-content .stake-unstake-item h5 {
+  font-size: 18px;
+  color: var(--white-color);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.stake-unstake-content .stake-unstake-item h3 {
+  font-family: 'IBM-Medium';
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.stake-form {
+  border-top: 1.4px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+}
+
+.stake-form ul {
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.stake-form .nav-link {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  padding: 3px 6px;
+}
+
+.stake-form .nav-link.active {
+  color: var(--white-color);
+  background: no-repeat;
+  border-bottom: 2px solid #fff;
+}
+
+.stake-form form {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 55px;
+}
+
+.stake-form form input {
+  width: 100%;
+  border-radius: 0;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none;
+  background: none;
+  height: 100%;
+  color: var(--white-color);
+  padding: 15px;
+}
+
+.stake-form form label {
+  letter-spacing: 0.03em;
+  font-family: 'Satoshi-Regular';
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 28px 0 15px;
+}
+
+.stake-form form button {
+  width: 100%;
+  max-width: 160px;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  color: #252237;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.details-content {
+  margin-top: 30px;
+}
+
+.details-item {
+  background: #1C1C1C;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.details-item .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.details-item .title img {
+  border-radius: 100px;
+}
+
+.details-item .title h5 {
+  color: var(--white-color);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.details-item .details-list {
+  margin-top: 25px;
+}
+
+.details-item .details-list li {
+  color: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+.details-item .details-list li:last-child {
+  margin-bottom: 0;
+}
+
+.details-item .details-list li .text-l {
+  letter-spacing: 0.03em;
+  font-size: 18px;
+}
+
+.details-item .details-list li .text-r {
+  margin-left: auto;
+  display: -ms-grid;
+  display: grid;
+  text-align: right;
+}
+
+.details-item .details-list li .text-r span {
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  font-family: 'IBM-Medium';
+  font-weight: 500;
+}
+
+.details-item .details-list li .text-r .usd {
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.details-item .details-list li .text-r h6 {
+  font-size: 20px;
+  font-family: 'IBM-Medium';
+  font-weight: 500;
+}
+
+.profits-cont {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.profits-cont .profits-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 4px;
+  padding: 25px;
+}
+
+.profits-cont .profits-box img {
+  border-radius: 100px;
+}
+
+.profits-cont .profits-box .text {
+  margin-left: auto;
+  color: var(--white-color);
+  display: -ms-grid;
+  display: grid;
+  text-align: right;
+}
+
+.profits-cont .profits-box .text span {
+  font-family: 'IBM-Medium';
+  font-weight: 500;
+  font-size: 37px;
+}
+
+.profits-cont .profits-box .text .usd {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.profits-cont .profit-btn {
+  background: #F43883;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-family: 'Satoshi-Bold';
+  font-weight: 700;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profits-cont .show {
+  color: var(--primary-color);
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+  text-align: center;
+}
+
+.referral-con {
+  background: #1C1C1C;
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 40px;
+}
+
+.referral-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  color: var(--white-color);
+  margin-bottom: 30px;
+}
+
+.referral-head .text {
+  text-transform: uppercase;
+}
+
+.referral-head .title {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.referral-head .title img {
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.referral-content {
+  padding-top: 30px;
+}
+
+.referral-content .referral-item {
+  text-align: center;
+}
+
+.referral-content .referral-item h5 {
+  font-size: 18px;
+  color: var(--white-color);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.referral-content .referral-item h3 {
+  font-family: 'IBM-Medium';
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.referral-form form {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 55px;
+}
+
+.referral-form form input {
+  width: 100%;
+  border-radius: 0;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none;
+  background: none;
+  height: 100%;
+  padding: 15px;
+  letter-spacing: 0.03em;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.referral-form form button {
+  width: 100%;
+  max-width: 160px;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  color: #252237;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.winner-con {
+  background: #1C1C1C;
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 40px;
+}
+
+.winner-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(335px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+}
+
+.winner-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white-color);
+  margin-bottom: 25px;
+}
+
+.winner-header h5 {
+  text-transform: uppercase;
+}
+
+.winner-header .sort-by {
+  margin-left: auto;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  height: 47px;
+  width: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+
+.winner-item {
+  border: 1.4px solid rgba(255, 255, 255, 0.1);
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.winner-item h6 {
+  font-size: 20px;
+  color: var(--white-color);
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 20px;
+}
+
+.winner-item:last-child {
+  border-right: 0;
+}
+
+.winner-item:first-child {
+  border-left: 0;
+}
+
+.winner-list li {
+  color: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-top: 1.4px solid rgba(255, 255, 255, 0.1);
+}
+
+.winner-list li .text-l {
+  letter-spacing: 0.03em;
+  font-size: 18px;
+}
+
+.winner-list li .text-r {
+  margin-left: auto;
+  display: -ms-grid;
+  display: grid;
+  text-align: right;
+}
+
+.winner-list li .text-r span {
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  font-family: 'IBM-Medium';
+  font-weight: 500;
+}
+
+.winner-list li .text-r .usd {
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+@media (max-width: 1199.98px) {
+  .col_3 {
+    -ms-grid-columns: (minmax(255px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  }
+  .profits-cont .profits-box {
+    padding: 13px;
+  }
+  .profits-cont .profits-box .text span {
+    font-size: 30px;
+  }
+  .profits-cont .profits-box .text .usd {
+    font-size: 15px;
+  }
+  .details-item .title h5 {
+    font-size: 18px;
+  }
+  .details-item:nth-child(2) {
+    grid-column: 1/-1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .details-content.col_3 {
+    -ms-grid-columns: (minmax(35%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(35%, 1fr));
+  }
+  .winner-content {
+    -ms-grid-columns: (minmax(285px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+  }
+  .winner-list li .text-l {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+  .header-content .header-right {
+    margin: 0 auto;
+  }
+  .header-content .header-center {
+    margin: 17px 0;
+    padding: 0;
+    border: 0;
+  }
+  .header-content .header-left .docs {
+    padding-right: 0;
+  }
+  h1 {
+    font-size: 21px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .stake-unstake-content .stake-unstake-item h5,
+  .many-content .many-item h4 {
+    font-size: 15px;
+  }
+  .stake-unstake-content .stake-unstake-item h3,
+  .many-content .many-item h2 {
+    font-size: 28px;
+  }
+  .details-content.col_3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .stake-form .nav-link {
+    font-size: 17px;
+  }
+  .stake-form form button {
+    max-width: 68px;
+    font-size: 13px;
+  }
+  .stake-form form {
+    height: 40px;
+  }
+  .stake-form form label {
+    font-size: 14px;
+    padding: 0 10px 0 5px;
+  }
+  .details-item .title h5 {
+    font-size: 14px;
+  }
+  .details-item .details-list li .text-l {
+    font-size: 13px;
+  }
+  .details-item .details-list li .text-r span {
+    font-size: 15px;
+  }
+  .details-item .details-list li .text-r .usd {
+    font-size: 10px;
+  }
+  .details-item .details-list li {
+    margin: 10px 0;
+  }
+  .details-item .details-list li .text-r h6 {
+    font-size: 15px;
+  }
+  .referral-con {
+    padding: 25px;
+  }
+  .referral-form form button {
+    max-width: 80px;
+    font-size: 14px;
+  }
+  .referral-form form input {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .referral-form form {
+    height: 40px;
+  }
+  .referral-content .referral-item h3 {
+    font-size: 28px;
+  }
+  .referral-content .referral-item h5 {
+    font-size: 12px;
+  }
+  .winner-content {
+    gap: 30px;
+  }
+  .winner-con {
+    padding: 30px;
+  }
+  .winner-item {
+    border: 1.4px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  .winner-item h6 {
+    font-size: 16px;
+  }
+  .winner-header .sort-by {
+    margin: 20px auto 0;
+    font-size: 11px;
+    height: 40px;
+    width: 120px;
+    gap: 16px;
+  }
+  .winner-header h5 {
+    margin: 0 auto;
+  }
+  .winner-header img {
+    height: 12px;
+  }
+  .winner-list li .text-r span {
+    font-size: 15px;
+  }
+  .winner-list li .text-r .usd {
+    font-size: 10px;
+  }
+  .referral-head .text {
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
