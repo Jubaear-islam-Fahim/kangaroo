@@ -814,6 +814,27 @@ h5 {
     margin-left: 0 !important;
     padding: 0;
   }
+  .offcanvas {
+    background-color: var(--black-color);
+    width: 310px !important;
+  }
+  ul.navbar-nav {
+    gap: 20px;
+  }
+  .btn-close {
+    -webkit-filter: invert(87%) sepia(88%) saturate(1%) hue-rotate(269deg) brightness(110%) contrast(97%);
+            filter: invert(87%) sepia(88%) saturate(1%) hue-rotate(269deg) brightness(110%) contrast(97%);
+  }
+  .header-center {
+    padding: 0 0px !important;
+    gap: 30px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    border: 0;
+    display: -ms-grid;
+    display: grid;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -960,7 +981,8 @@ h5 {
   .referral-content .referral-item h3 {
     font-size: 18px;
   }
-  .stake-unstake-content .stake-unstake-item h3, .many-content .many-item h2 {
+  .stake-unstake-content .stake-unstake-item h3,
+  .many-content .many-item h2 {
     font-size: 17px;
   }
 }
