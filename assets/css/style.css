@@ -786,7 +786,6 @@ h5 {
     -ms-grid-columns: (minmax(100%, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
-  .winner-list,
   .details-list {
     display: none;
   }
