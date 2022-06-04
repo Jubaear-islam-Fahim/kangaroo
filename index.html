@@ -477,8 +477,8 @@
             <option value="Mercedes">Mercedes</option>
             <option value="Volvo">Volvo</option>
         </select>
-         
-        <p id="demo">
+
+        <p id="demo" class="Audi">
 
         </p>
     </div>
@@ -488,8 +488,9 @@
     <script>
 
         function myFunction() {
-            var list = document.getElementById("selectItem").value; 
+            var list = document.getElementById("selectItem").value;
             document.getElementById("demo").innerHTML = list;
+            document.getElementById("demo").className = list
         }
 
 
