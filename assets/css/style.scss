@@ -661,8 +661,7 @@ h5 {
 
 @media (min-width: 1200px) {
 
-    .details-list,
-    .winner-list {
+    .details-list {
         display: block !important;
     }
 }
@@ -723,7 +722,7 @@ h5 {
     .details-content.col_3 {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
- 
+
     .details-list {
         display: none;
     }
@@ -920,9 +919,10 @@ h5 {
         font-size: 16px;
         padding: 17px;
     }
-    .winner-list li { 
+
+    .winner-list li {
         padding: 15px;
-       
+
     }
 
     .winner-header .sort-by {
@@ -982,21 +982,90 @@ h5 {
         border-top: 1.4px solid rgba(255, 255, 255, 0.1);
         margin-top: 20px;
     }
-    .profits-cont { 
+
+    .profits-cont {
         gap: 20px;
         margin-top: 20px;
     }
-    .details-content{
+
+    .details-content {
         gap: 15px
     }
-    .referral-head .title{
-        margin: 0;
+
+    .referral-head .title {
+        margin: 0 auto;
     }
-    .banner-content { 
+
+    .banner-content {
         margin-bottom: 30px;
     }
-    .banner-content h5 { 
+
+    .banner-content h5 {
         padding: 8px 0 10px;
+    }
+
+    #selectItem {
+        border: 0;
+        width: 100%;
+        height: 56px;
+        padding: 0 15px;
+        background: #1C1C1C;
+        outline: none;
+        color: #fff;
+        text-align: center;
+        appearance: none;
+        font-size: 18px;
+            
+    }
+
+    .winner-selects{
+        position: relative;
+        &::after {
+            content: url(../img/down-i.png);
+            margin-left: 10px;
+            position: absolute;
+            top: 50%;
+            right: 18%;
+            transform: translateY(-50%);
+        } 
+    }
+
+
+    .depositor {
+        .winner-list {
+            display: none;
+        }
+
+        .winner-list.depositor-list {
+            display: block;
+        }
+    }
+
+    .Lottery {
+        .winner-list {
+            display: none;
+        }
+
+        .winner-list.Lottery-list {
+            display: block;
+        }
+    }
+
+    .referral {
+        .winner-list {
+            display: none;
+        }
+
+        .winner-list.referral-list {
+            display: block;
+        }
+    }
+    .referral-head .title img { 
+        width: 18px;
+        height: 18px;
+    }
+    .referral-head .title h5 {
+        font-size: 12px;
     }
 
 }
@@ -1014,7 +1083,7 @@ h5 {
     }
 
     .referral-con {
-        padding: 15px;
+        padding: 25px 15px;
     }
 
     .referral-content .referral-item h5 {
