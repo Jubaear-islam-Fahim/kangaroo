@@ -811,7 +811,6 @@ h5 {
     margin-right: 0;
   }
   .desktop-none.ms-auto {
-    margin-left: 0 !important;
     padding: 0;
   }
   .offcanvas {
@@ -862,15 +861,22 @@ h5 {
   }
   .stake-con {
     margin-top: 20px;
-    padding: 25px;
+    padding: 15px;
+    margin: 13px 0 0;
+  }
+  .stake-form {
+    border-top: 0;
+    border-bottom: 1.4px solid rgba(255, 255, 255, 0.1);
+    padding: 0;
+    padding-bottom: 20px;
   }
   .stake-unstake-content .stake-unstake-item h5,
   .many-content .many-item h4 {
     font-size: 13px;
-    min-height: 53px;
+    min-height: 35px;
   }
   .many-content .many-item {
-    padding: 20px 10px 25px;
+    padding: 20px 10px 20px;
   }
   .stake-unstake-content .stake-unstake-item h3,
   .many-content .many-item h2 {
@@ -917,7 +923,7 @@ h5 {
   }
   .referral-form form input {
     padding: 5px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .referral-form form {
     height: 40px;
@@ -936,17 +942,28 @@ h5 {
   }
   .winner-item h6 {
     font-size: 16px;
+    padding: 17px;
+  }
+  .winner-list li {
+    padding: 15px;
   }
   .winner-header .sort-by {
-    margin: 20px auto 0;
     font-size: 11px;
     height: 35px;
     width: 95px;
     gap: 16px;
-    margin-top: 0;
+    margin: 0;
+    margin-left: auto;
   }
   .winner-header h5 {
-    margin: 0 auto;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 9px;
   }
   .winner-header img {
     height: 12px;
@@ -959,17 +976,62 @@ h5 {
   }
   .referral-head .text {
     margin: 0 auto;
+    font-size: 18px;
+  }
+  .stake-unstake-content {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .details-item:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .details-item:nth-child(2) {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
+  .details-item .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .referral-content {
+    padding-top: 20px;
+    border-top: 1.4px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+  }
+  .profits-cont {
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .details-content {
+    gap: 15px;
+  }
+  .referral-head .title {
+    margin: 0;
+  }
+  .banner-content {
+    margin-bottom: 30px;
+  }
+  .banner-content h5 {
+    padding: 8px 0 10px;
   }
 }
 
 @media (max-width: 576px) {
   .stake-unstake-content .stake-unstake-item h5,
   .many-content .many-item h4 {
-    font-size: 11px;
+    font-size: 10px;
   }
   .col_3 {
     gap: 5px;
-    padding-top: 25px;
+    row-gap: 15px;
   }
   .referral-con {
     padding: 15px;
